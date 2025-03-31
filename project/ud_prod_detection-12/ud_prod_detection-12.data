@@ -1,0 +1,5 @@
+classes = 9
+train = /home/ddavlet/project/ud_prod_detection-12/ud_prod_detection-12_train.txt
+valid = /home/ddavlet/project/ud_prod_detection-12/ud_prod_detection-12_valid.txt
+names = /home/ddavlet/project/ud_prod_detection-12/bella.names
+backup = /home/ddavlet/project/ud_prod_detection-12
