@@ -1,0 +1,3 @@
+/home/ddavlet/project/ud_prod_detection-12/predictions.jpg
+/home/ddavlet/project/ud_prod_detection-12/img5.jpg
+/home/ddavlet/project/ud_prod_detection-12/img.jpeg
