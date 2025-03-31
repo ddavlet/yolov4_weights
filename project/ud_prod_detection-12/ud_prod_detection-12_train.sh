@@ -15,9 +15,9 @@ ts1=$(date)
 ts2=$(date +%s)
 echo "initial ts1: ${ts1}" >> output.log
 echo "initial ts2: ${ts2}" >> output.log
-echo "cmd: /usr/bin/darknet detector -map -dont_show train /home/ddavlet/project/ud_prod_detection-12/ud_prod_detection-12.data /home/ddavlet/project/ud_prod_detection-12/ud_prod_detection-12.cfg --save-weights 500" >> output.log
-
-/usr/bin/time --verbose /usr/bin/darknet detector -map -dont_show train /home/ddavlet/project/ud_prod_detection-12/ud_prod_detection-12.data /home/ddavlet/project/ud_prod_detection-12/ud_prod_detection-12.cfg --save-weights 500 2>&1 | tee --append output.log
+echo "cmd: /usr/bin/darknet detector -map -dont_show train /home/ddavlet/project/ud_prod_detection-12/ud_prod_detection-12.data /home/ddavlet/project/ud_prod_detection-12/ud_prod_detection-12.cfg /home/ddavlet/project/ud_prod_detection-12/yolov4-tiny.conv.29 --save-weights 500" >> output.log
+!curl -L "https://github.com/GotG/yolotinyv3_medmask_demo/blob/master/yolov4-tiny.conv.29" > /home/ddavlet/project/ud_prod_detection-12/yolov4-tiny.conv.29
+/usr/bin/time --verbose /usr/bin/darknet detector -map -dont_show train /home/ddavlet/project/ud_prod_detection-12/ud_prod_detection-12.data /home/ddavlet/project/ud_prod_detection-12/ud_prod_detection-12.cfg /home/ddavlet/project/ud_prod_detection-12/yolov4-tiny.conv.29 --save-weights 500 2>&1 | tee --append output.log
 
 ts3=$(date)
 ts4=$(date +%s)
