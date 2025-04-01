@@ -8247,18 +8247,6 @@
 			}
 		}
 	],
-	"predictions": {
-		"IoU": {
-			"avg": 0.6733346698386108,
-			"max": 1.0,
-			"min": 0.0
-		},
-		"annotations_without_predictions": 41,
-		"count": 173,
-		"matches": 165,
-		"number_of_differences": 49,
-		"predictions_without_annotations": 8
-	},
-	"timestamp": 1743419390,
+	"timestamp": 1743502126,
 	"version": "1.10.18-1"
 }
